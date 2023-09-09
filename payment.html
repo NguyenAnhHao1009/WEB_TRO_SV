@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/79624eb5cd.js"></script>
+    <!-- crossorigin="anonymous" -->
+    <title>Thông Tin Thanh Toán</title>
+
+    <link rel="shortcut icon" href="./img/favi_icon.png" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./asset/TrangChu.css">
+    <link rel="stylesheet" href="./asset/header_footer_responsive.css">
+    <link rel="stylesheet" href="asset/payment.css">
+
+</head>
+
+<body>
+    <!-- loading webpage -->
+  
+
+    
+
+
+
+
+    <!-- start main -->
+    <main class="main" >
+        <div style="text-align: center; background-image: url(img/bg_breadcrumb-gioi-thieu.png);"><img src="img/logo.png" alt=""></div>
+        
+        <h1 style="text-align: center; margin-top: 10px;">Xác Nhận Thông Tin Thanh Toán</h1>
+    <div class="container">
+    <form enctype="application/x-www-form-urlencoded" method="post" action="TrangChu.html" onsubmit="{alert('Bạn đã thanh toán thành công');}">
+            <div>
+                <input autofocus type="text" id="name" name="name" required maxlength="50" placeholder="Nhập tên của bạn">
+            </div>
+            <div>
+                <input type="tel" id="phone" name="phone" required placeholder="Nhập SĐT của bạn" pattern="\d{10}">
+            </div>
+            <div>
+                <input type="text" name="email" id="email" required placeholder="Nhập email của bạn"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </div>
+            <div>
+                <input type="num" id="age"maxlength="2" name="age" required placeholder="Nhập tuổi của bạn">
+            </div>
+            <div>
+                <input type="money" id="money" name="money" required placeholder="Nhập số tiền bạn muốn đặt trước (VND)">
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                Học Sinh <input style="width: 15px; margin-right: 10px; height: 15px;" type="radio" checked id="hocsinh" value="1"
+                    name="nghenghiep">
+                Sinh Viên <input style="width: 15px; margin-right: 10px; height: 15px;" type="radio" id="sinhvien" value="1" name="nghenghiep">
+                Đang đi làm <input style="width: 15px; margin-right: 5px; height: 15px;" type="radio" id="dilam" value="1" name="nghenghiep">
+            </div>
+           
+            <div style="margin: 20px 0;">
+                <select name="payment" id="payment" style="width: 100%; height: 35px;" required>
+                    <option value="none">Chọn phương thức thanh toán</option>
+                    <option value="1">Tài khoản ngân hàng</option>
+                    <option value="1">MoMo</option>
+                    <option value="1">Viettel Pay</option>
+                    <option value="1">Shoppee Pay</option>
+                    <option value="1">VN Pay</option>
+                </select>
+            </div>
+            <p class="dkdn">Bấm nút xác nhận thanh toán, bạn đã đồng ý với <a href="dieukhoang.html" style="text-decoration: none;">điều khoản nhà trọ</a> của LaLaHouse
+            </p>
+            <div>
+                <input type="submit" class="btn-payment"  value="Xác nhận thanh toán">
+            </div>
+        </form>
+    </div>
+
+    </main>
+    <!-- end main -->
+
+   <!-- start footer -->
+   <footer class="footer">
+    <div class="footer__new-letter">
+        <h3 class="footer__new-letter__primary">Đăng ký nhận khuyến mãi</h3>
+        <div class="footer__new-letter__form">
+            <div class="footer__new-letter__input">
+                <input id="input1" placeholder="Nhập email của bạn" type="email">
+            </div>
+            <div class="footer__new-letter__btn">
+                <button id="email_btn"> <a style="text-decoration: none; color: white;" href="DangKy.html">Đăng ký</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer-main__container"> -->
+    <div class="footer-main__container__content">
+        <div class="footer-main__container__items footer-main__container__items--contact">
+            <div class="footer-main__container__item">
+                <img style="height: 62px;    margin: -20px 50px -10px;" src="./img/logo.png" alt="">
+            </div>
+
+            <ul class="footer-main__container__items__ul">
+                <li class="footer-main__container__items__li"><i class="fa-solid fa-location-dot"></i>30/4, Ninh
+                    Kiều, TP Cần Thơ</li>
+                <li class="footer-main__container__items__li"><i
+                        class="fa-solid fa-mobile-screen-button"></i>0778668213</li>
+                <li class="footer-main__container__items__li"><i class="fa-solid fa-phone"></i>0706985944</li>
+                <li class="footer-main__container__items__li"><i
+                        class="fa-solid fa-envelope"></i>lalahouse@gmail.com</li>
+            </ul>
+
+        </div>
+        <div class="footer-main__container__items">
+            <div class="footer-rest-title">
+                <h3>Chính sách</h3>
+            </div>
+            <ul class="footer-main__container__items__ul">
+
+                <li class="footer-main__container__items__li"><a href="https://thuvienphapluat.vn/page/viewcontentleft.aspx?key=86"
+                        class="footer-main__container__items__a">Chính sách bảo mật</a> </li>
+                <li class="footer-main__container__items__li"><a href="https://luatduonggia.vn/quy-dinh-ve-quyen-bi-mat-doi-tu-trong-cac-van-ban-quy-pham-phap-luat/"
+                        class="footer-main__container__items__a">Quyền riêng tư</a> </li>
+                <li class="footer-main__container__items__li"><a href="https://luatminhkhue.vn/mot-so-nhung-phuong-thuc-thanh-toan-quoc-te-pho-bien-hien-nay.aspx"
+                        class="footer-main__container__items__a">Phương thức thanh toán</a> </li>
+            </ul>
+        </div>
+        <div class="footer-main__container__items">
+            <div class="footer-rest-title">
+                <h3>về chúng tôi</h3>
+            </div>
+            <ul class="footer-main__container__items__ul">
+                <li class="footer-main__container__items__li"> <a href="Shop.html"
+                        class="footer-main__container__items__a">Giỏ hàng</a> </li>
+                <li class="footer-main__container__items__li"> <a href="GioiThieu.html"
+                        class="footer-main__container__items__a">Giới thiệu</a> </li>
+                <li class="footer-main__container__items__li"> <a href="huongdanmuahang.html"
+                        class="footer-main__container__items__a">Hướng dẫn mua hàng</a> </li>
+                <li class="footer-main__container__items__li"> <a href="LienHe.html"
+                        class="footer-main__container__items__a">Liên hệ</a> </li>
+            </ul>
+        </div>
+        <div class="footer-main__container__items">
+            <div class="footer-rest-title">
+                <h3>mạng xã hội</h3>
+            </div>
+            <ul class="footer-main__container__items__ul">
+                <li class="footer-main__container__items__li"><a href="https://vi-vn.facebook.com/" class="footer-main__container__items__a"><i
+                            class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+                <li class="footer-main__container__items__li"><a href="https://www.instagram.com/" class="footer-main__container__items__a"><i
+                            class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+                <li class="footer-main__container__items__li"><a href="https://www.linkedin.com/" class="footer-main__container__items__a"><i
+                            class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+                <li class="footer-main__container__items__li"><a href="https://www.snapchat.com/" class="footer-main__container__items__a"><i
+                            class="fa-brands fa-square-snapchat"></i>Snapchat</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- </div> -->
+</footer>
+<!-- end footer -->
+
+    <!-- backtop -->
+    <a href="#" class="back-top">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+ 
+    <script src="./asset/TrangChu.js"></script>
+  
+
+    <script src="./asset/get_data_san_pham.js"></script>
+
+    
+
+</body>
+
+</html>

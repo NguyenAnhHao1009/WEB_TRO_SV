@@ -1,0 +1,102 @@
+.header__banner{
+    display: none !important;
+}
+
+.main {
+    margin-top: 84px;
+}
+
+.main__slider {
+    background: url('../img/bg_breadcrumb-gioi-thieu.png') top center / cover no-repeat ;
+    height: 160px;
+    width: 100%;
+}
+
+.main__slider__content {
+    text-align: center;
+    line-height: 160px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.product-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 40px;
+}
+
+.product-option:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.12) ;
+}
+
+.product-option {
+    flex : 0 0 20%;
+    max-width: 20%;
+    text-align: center;
+    margin: 16px 2%;
+}
+
+.product--img {
+    width: 100%;
+}
+
+.product--name {
+    font-size: 21px;
+}
+
+.product-buy:hover {
+    color: #59cca6 ;
+}
+
+/* .product-buy  i {
+
+} */
+
+.product-buy {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+.product-title::after{
+        position: relative;
+        left: 50%;
+        display: block;
+        content: " ";
+        width: 400px;
+        height: 5px;
+        transform: skewX(-12deg) translateX(-50%);
+        background: radial-gradient(#f7d58e, #fff);
+}
+
+
+@media (max-width : 63.9375em)  {
+
+}
+
+@media (max-width : 63.9375em)  {
+
+}
+
+@media (max-width : 46.1875em) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .product-option {
+        flex: 0 0 46%;
+        max-width: 50% !important;
+    }
+
+}

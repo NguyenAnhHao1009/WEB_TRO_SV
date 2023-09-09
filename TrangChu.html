@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/79624eb5cd.js"></script>
+    <!-- crossorigin="anonymous" -->
+    <title>Trang Chủ</title>
+
+    <link rel="shortcut icon" href="./img/favi_icon.png" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- hieu ung load trang web -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./asset/TrangChu.css">
+    <link rel="stylesheet" href="./asset/header_footer_responsive.css">
+
+</head>
+
+<body>
+    <!-- loading webpage -->
+    <div id="loader">
+        <div class="circle">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </div>
+
+    <!-- start header -->
+    <header id="header_container">
+        <div class="header__logo">
+            <a href="./TrangChu.html" class="logo__a">
+                <img src="img/logo.png">
+            </a>
+        </div>
+
+        <div class="navbar" id="navbar_menu">
+            <ul class="navbar__ul">
+                <li class="navbar__li"><a class="navbar__a" href="./TrangChu.html">Trang chủ</a></li>
+                <li class="navbar__li"><a class="navbar__a" href="./GioiThieu.html">Giới thiệu</a></li>
+                <li class="navbar__li navbar__dropdown "><a class="navbar__a" href="./SanPham.html">Phòng Trọ <i
+                            class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li class="dropdown-content__li"><a href="./SanPham.html#hoaqua"
+                                class="dropdown-content__a">Ninh Kiều</a></li>
+                        <li class="dropdown-content__li"><a href="./SanPham.html#thucphamtuoisong"
+                                class="dropdown-content__a">Bình Thủy</a></li>
+                        <li class="dropdown-content__li"><a href="./SanPham.html#raucu" class="dropdown-content__a">Cái
+                                Răng</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__li"><a class="navbar__a" href="./LienHe.html">Liên hệ</a></li>
+
+            </ul>
+            <div class="header__search-user" action="">
+                <!-- search -->
+                <div class="header--search">
+                    <input class="search--input" type="text" placeholder="Tìm kiếm..." required>
+                    <button class="search--btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <!-- user && shop -->
+                <div class="header--user">
+                    <a href="./DangNhap.html" class="header--user--btn user--btn">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </a>
+                    <a href="./Shop.html" class="header--user--btn shop--btn ">
+                        <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+    
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- menu mobile -->
+        <div id="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- slider -->
+    <div id="slider">
+        <img id="slider--img1" src="./img/slider_1.jpg" alt="">
+        <!-- <img class="slider--img2" src="./img/m_slider_2.jpg" alt=""> -->
+        <!-- <h3 class="slider__text" style="color: aliceblue;">LaLa House</h3> -->
+    </div>
+
+
+
+    <!-- start main -->
+    <main class="main">
+        <div class="main--sale">
+            <div class="about-shop">
+                <h1 class="about-shop__title line">Về chúng tôi</h1>
+                <p class="about-shop-text">
+                    Chúng tôi là một cửa hàng chuyên cung cấp phòng trọ dành cho sinh viên. Với mong muốn mang đến một
+                    môi trường sống tốt đẹp, an ninh và thuận tiện cho sinh viên, chúng tôi cam kết cung cấp những phòng
+                    trọ chất lượng với dịch vụ tận tâm và chuyên nghiệp.
+                </p>
+                <br>
+                <img src="./img/about-img.jpg" alt="" class="about-shop-img">
+                <br>
+                <br>
+                <ul class="about-list">
+                    <li class="about-li">
+                        <p class="about-shop-text2">Luôn luôn nhiệt tình niềm nở chào đón bạn</p>
+                    </li>
+                    <li class="about-li">
+                        <p class="about-shop-text2">Giá cả hợp lí phù hợp với mọi người</p>
+                    </li>
+                    <li class="about-li">
+                        <p class="about-shop-text2">Vị trí địa lí đa dạng cho bạn lựa chọn</p>
+                    </li>
+                    <li class="about-li">
+                        <p class="about-shop-text2"> Đảm bảo không gian thoáng mát đầy đủ tiện nghi</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar--sale">
+                <h1 class="sidebar--title line">Big Sales</h1>
+
+                <a href="./SanPham.html"><img src="./img/sale-img.jpeg" alt="" class="sale-img"></a>
+            </div>
+        </div>
+
+        <div class="topbuy--primary">
+            <h1 class="line">PHÒNG TRỌ MỚI NHẤT</h1>
+        </div>
+
+        <div class="topbuy"></div>
+
+        <div class="hotline">
+            <div class="hotline-theme">
+                <div class="hotline-content">
+                    <h2 class="hotline__h2">Hotline</h2>
+                    <a class="hotline__a" href="">0328794467</a>
+                    <p class="hotline__p">Chúng tôi cam kết 100% chất lượng xứng đáng với giá tiền mà bạn bỏ ra.
+                    <p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="footer__new-letter">
+            <h3 class="footer__new-letter__primary">Đăng ký nhận khuyến mãi</h3>
+            <div class="footer__new-letter__form">
+                <div class="footer__new-letter__input">
+                    <input id="input1" placeholder="Nhập email của bạn" type="email">
+                </div>
+                <div class="footer__new-letter__btn">
+                    <button id="email_btn"> <a style="text-decoration: none; color: white;" href="DangKy.html">Đăng ký</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="footer-main__container"> -->
+        <div class="footer-main__container__content">
+            <div class="footer-main__container__items">
+                <div class="footer-rest-title">
+                    <img style="height: 62px;    margin: -24px 50px -10px;" src="./img/logo.png" alt=""> 
+                </div>
+                <ul class="footer-main__container__items__ul">
+                    <li class="footer-main__container__items__li"><i class="fa-solid fa-location-dot"></i>30/4, Ninh
+                        Kiều, TP Cần Thơ</li>
+                    <li class="footer-main__container__items__li"><i
+                            class="fa-solid fa-mobile-screen-button"></i>0778668213</li>
+                    <li class="footer-main__container__items__li"><i class="fa-solid fa-phone"></i>0706985944</li>
+                    <li class="footer-main__container__items__li"><i
+                            class="fa-solid fa-envelope"></i>lalahouse@gmail.com</li>
+                </ul>
+
+            </div>
+            <div class="footer-main__container__items">
+                <div class="footer-rest-title">
+                    <h3>Chính sách</h3>
+                </div>
+                <ul class="footer-main__container__items__ul">
+
+                    <li class="footer-main__container__items__li"><a href="https://thuvienphapluat.vn/page/viewcontentleft.aspx?key=86"
+                            class="footer-main__container__items__a">Chính sách bảo mật</a> </li>
+                    <li class="footer-main__container__items__li"><a href="https://luatduonggia.vn/quy-dinh-ve-quyen-bi-mat-doi-tu-trong-cac-van-ban-quy-pham-phap-luat/"
+                            class="footer-main__container__items__a">Quyền riêng tư</a> </li>
+                    <li class="footer-main__container__items__li"><a href="https://luatminhkhue.vn/mot-so-nhung-phuong-thuc-thanh-toan-quoc-te-pho-bien-hien-nay.aspx"
+                            class="footer-main__container__items__a">Phương thức thanh toán</a> </li>
+                </ul>
+            </div>
+            <div class="footer-main__container__items">
+                <div class="footer-rest-title">
+                    <h3>về chúng tôi</h3>
+                </div>
+                <ul class="footer-main__container__items__ul">
+                    <li class="footer-main__container__items__li"> <a href="Shop.html"
+                            class="footer-main__container__items__a">Giỏ hàng</a> </li>
+                    <li class="footer-main__container__items__li"> <a href="GioiThieu.html"
+                            class="footer-main__container__items__a">Giới thiệu</a> </li>
+                    <li class="footer-main__container__items__li"> <a href="huongdanmuahang.html"
+                            class="footer-main__container__items__a">Hướng dẫn mua hàng</a> </li>
+                    <li class="footer-main__container__items__li"> <a href="LienHe.html"
+                            class="footer-main__container__items__a">Liên hệ</a> </li>
+                </ul>
+            </div>
+            <div class="footer-main__container__items">
+                <div class="footer-rest-title">
+                    <h3>mạng xã hội</h3>
+                </div>
+                <ul class="footer-main__container__items__ul">
+                    <li class="footer-main__container__items__li"><a href="https://vi-vn.facebook.com/" class="footer-main__container__items__a"><i
+                                class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+                    <li class="footer-main__container__items__li"><a href="https://www.instagram.com/" class="footer-main__container__items__a"><i
+                                class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+                    <li class="footer-main__container__items__li"><a href="https://www.linkedin.com/" class="footer-main__container__items__a"><i
+                                class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+                    <li class="footer-main__container__items__li"><a href="https://www.snapchat.com/" class="footer-main__container__items__a"><i
+                                class="fa-brands fa-square-snapchat"></i>Snapchat</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- </div> -->
+    </footer>
+    <!-- end footer -->
+
+    <!-- backtop -->
+    <a href="#" class="back-top">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+    <script src="./data/dataTrangChu.js"></script>
+    <script src="./asset/TrangChu.js"></script>
+    <script src="./asset/Header_mobile.js"> </script>
+    <script src="./asset/js_dungchung.js"></script>
+    <script src="./asset/get_data_san_pham.js"></script>
+    <script src="asset/search.js"></script>
+
+    <script>
+        // thay doi slider trang chu
+        var imgtag = document.getElementById("slider--img1");
+        var imgArr = ["./img/slider_1.jpg", "./img/m_slider_2.jpg"];
+        var i = 0;
+        function changImg() {
+            imgtag.setAttribute("src", imgArr[i]);
+            i++;
+            if (i == imgArr.length) i = 0;
+        }
+        setInterval(changImg, 1500);
+
+    </script>
+
+</body>
+
+</html>

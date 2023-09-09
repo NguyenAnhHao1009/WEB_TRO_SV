@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+    <link rel="shortcut icon" href="img/favi_icon.png" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- hieu ung load trang web -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="asset/TrangChu.css">
+    <link rel="stylesheet" href="asset/ChiTietSanPham.css">
+    <link rel="stylesheet" href="./asset/header_footer_responsive.css">
+</head>
+
+<body>
+
+    <!-- loading webpage -->
+    <div id="loader">
+        <div class="circle">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </div>
+
+    <!-- start header -->
+    <!-- start header -->
+    <header id="header_container">
+        <div class="header__logo">
+            <a href="./TrangChu.html" class="logo__a">
+                <img src="img/logo.png">
+            </a>
+        </div>
+
+        <div class="navbar" id="navbar_menu">
+            <ul class="navbar__ul">
+                <li class="navbar__li"><a class="navbar__a" href="./TrangChu.html">Trang chủ</a></li>
+                <li class="navbar__li"><a class="navbar__a" href="./GioiThieu.html">Giới thiệu</a></li>
+                <li class="navbar__li navbar__dropdown "><a class="navbar__a" href="./SanPham.html">Phòng Trọ <i
+                            class="fa-solid fa-chevron-down"></i></i></a>
+                    <ul class="dropdown-content">
+                        <li class="dropdown-content__li"><a href="./SanPham.html#hoaqua"
+                                class="dropdown-content__a">Ninh Kiều</a></li>
+                        <li class="dropdown-content__li"><a href="./SanPham.html#thucphamtuoisong"
+                                class="dropdown-content__a">Bình Thủy</a></li>
+                        <li class="dropdown-content__li"><a href="./SanPham.html#raucu" class="dropdown-content__a">Cái
+                                Răng</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__li"><a class="navbar__a" href="./LienHe.html">Liên hệ</a></li>
+
+            </ul>
+            <div class="header__search-user" action="">
+                <!-- search -->
+                <div class="header--search">
+                    <input class="search--input" type="text" placeholder="Tìm kiếm...">
+                    <button class="search--btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <!-- user && shop -->
+                <div class="header--user">
+                    <a href="./DangNhap.html" class="header--user--btn user--btn">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </a>
+                    <a href="./Shop.html" class="header--user--btn shop--btn">
+                        <i class="fa-solid fa-cart-shopping fa-bounce"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- menu mobile -->
+        <div id="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!--main-->
+
+    <main>
+        <div class="main__slider">
+            <p class="main__slider__content"> CHI TIẾT</p>
+        </div>
+
+        <div class="chitiet-header">
+            <div class="sanpham">
+                <div class="sanpham-trai">
+                    <div class="sampham-img">
+                        <img id="img_sanpham" src="" alt="">
+                    </div>
+                </div>
+                <div class="sanpham-phai">
+                    <div class="chitiet-sanpham">
+                        <div class="loai-san-pham">
+                            <span>Chi tiết </span>
+                        </div>
+                        <div class="thuong-hieu">
+                            <!-- <span class="frist-status-1">
+                                Địa Chỉ: <span class="status-name"> Đang được cập nhật</span>
+                            </span> -->
+                            <span>
+                                Tình trạng:<span class="status-name"> Còn phòng</span>
+                            </span>
+                        </div>
+                        <div class="ten-san-pham">
+                            <p class="ten-san-pham-chi-tiet"></p>
+                        </div>
+                        <div class="gia-san-pham">
+                            <span class="gia-san-pham-chi-tiet">500,000</span><sup>đ</sup>
+                        </div>
+                        <div class="thong-tin-them">
+                           
+                        </div>
+                        <form action="#">
+
+                            <button class="chitiet-add-cart bnt-add-cart" type="submit" value="7" name="bnt-add-cart"
+                                data-title="DangNhap.html">
+                                <h3> Đặt Phòng</h3>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--         
+        <h1 style="text-align: center;">Phòng Trọ Tương Tự</h1>
+        <div id="sptt"></div> -->
+        <!-- San pham tương tự-->
+        <div class="topbuy--primary">
+            <h1 class="line">CÁC PHƯƠNG THỨC THANH TOÁN</h1>
+            <!-- San pham tương tự-->
+            <div class="product">
+                <div class="product-option" id="sanpham">
+                    <div class="product-item">
+                        <img class="product--img" src="img/frame.png" alt="">
+                        <div class="product-info">
+                            <div><p class="product--name" style="color: black; font-weight: 700;">Thanh toán <br> một chạm</p></div>
+   
+                        </div>
+                    </div>
+                </div>
+                <div class="product-option" id="sanpham">
+                    <div class="product-item">
+                        <img class="product--img" src="img/MOMO.png" alt="">
+                    <div class="product-info">
+                        <p class="product--name">Ví MoMo</p>
+                        <br><br>
+                    
+                        <button class="product-buy"><a href="payment.html"><i class="fa-solid fa-wallet fa-bounce fa-2xl"></i></a></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-option" id="sanpham">
+                    <div class="product-item">
+                        <img class="product--img" src="./img/VISA.png" alt="">
+                    <div class="product-info">
+                        <p class="product--name">ViSa Payment</p>
+                        <br><br>
+                        <button class="product-buy"><a href="payment.html"><i class="fa-solid fa-money-check-dollar fa-bounce fa-2xl"></i></a></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-option" id="sanpham">
+                    <div class="product-item">
+                        <img class="product--img" src="./img/VNPAY.png" alt="">
+                    <div class="product-info">
+                        <p class="product--name">VNPAY</p>
+                   
+                        <br><br>
+                        <button class="product-buy"><a href="payment.html"><i class="fa-regular fa-credit-card fa-bounce fa-2xl"></i></a></button>
+                    </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <!--end-->
+
+
+    </main>
+    <!--end main-->
+
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="footer__new-letter">
+            <h3 class="footer__new-letter__primary">Đăng ký nhận khuyến mãi</h3>
+            <div class="footer__new-letter__form">
+                <div class="footer__new-letter__input">
+                    <input id="input1" placeholder="Nhập email của bạn" type="email">
+                </div>
+                <div class="footer__new-letter__btn">
+                    <button id="email_btn"> <a style="text-decoration: none; color: white;" href="DangKy.html">Đăng ký</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="footer-main__container"> -->
+        <div class="footer-main__container__content">
+            <div class="footer-main__container__items footer-main__container__items--contact">
+                <div class="footer-main__container__item">
+                    <img style="height: 62px;    margin: -20px 50px -10px;" src="./img/logo.png" alt="">
+                </div>
+
+                <ul class="footer-main__container__items__ul">
+                    <li class="footer-main__container__items__li"><i class="fa-solid fa-location-dot"></i>30/4, Ninh
+                        Kiều, TP Cần Thơ</li>
+                    <li class="footer-main__container__items__li"><i
+                            class="fa-solid fa-mobile-screen-button"></i>0778668213</li>
+                    <li class="footer-main__container__items__li"><i class="fa-solid fa-phone"></i>0706985944</li>
+                    <li class="footer-main__container__items__li"><i
+                            class="fa-solid fa-envelope"></i>lalahouse@gmail.com</li>
+                </ul>
+
+            </div>
+            <div class="footer-main__container__items">
+                <div class="footer-rest-title">
+                    <h3>Chính sách</h3>
+                </div>
+                <ul class="footer-main__container__items__ul">
+
+                    <li class="footer-main__container__items__li"><a href="https://thuvienphapluat.vn/page/viewcontentleft.aspx?key=86"
+                            class="footer-main__container__items__a">Chính sách bảo mật</a> </li>
+                    <li class="footer-main__container__items__li"><a href="https://luatduonggia.vn/quy-dinh-ve-quyen-bi-mat-doi-tu-trong-cac-van-ban-quy-pham-phap-luat/"
+                            class="footer-main__container__items__a">Quyền riêng tư</a> </li>
+                    <li class="footer-main__container__items__li"><a href="https://luatminhkhue.vn/mot-so-nhung-phuong-thuc-thanh-toan-quoc-te-pho-bien-hien-nay.aspx"
+                            class="footer-main__container__items__a">Phương thức thanh toán</a> </li>
+                </ul>
+            </div>
+            <div class="footer-main__container__items">
+                <div class="footer-rest-title">
+                    <h3>về chúng tôi</h3>
+                </div>
+                <ul class="footer-main__container__items__ul">
+                    <li class="footer-main__container__items__li"> <a href="Shop.html"
+                            class="footer-main__container__items__a">Giỏ hàng</a> </li>
+                    <li class="footer-main__container__items__li"> <a href="GioiThieu.html"
+                            class="footer-main__container__items__a">Giới thiệu</a> </li>
+                    <li class="footer-main__container__items__li"> <a href="huongdanmuahang.html"
+                            class="footer-main__container__items__a">Hướng dẫn mua hàng</a> </li>
+                    <li class="footer-main__container__items__li"> <a href="LienHe.html"
+                            class="footer-main__container__items__a">Liên hệ</a> </li>
+                </ul>
+            </div>
+            <div class="footer-main__container__items">
+                <div class="footer-rest-title">
+                    <h3>mạng xã hội</h3>
+                </div>
+                <ul class="footer-main__container__items__ul">
+                    <li class="footer-main__container__items__li"><a href="https://vi-vn.facebook.com/" class="footer-main__container__items__a"><i
+                                class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+                    <li class="footer-main__container__items__li"><a href="https://www.instagram.com/" class="footer-main__container__items__a"><i
+                                class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+                    <li class="footer-main__container__items__li"><a href="https://www.linkedin.com/" class="footer-main__container__items__a"><i
+                                class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+                    <li class="footer-main__container__items__li"><a href="https://www.snapchat.com/" class="footer-main__container__items__a"><i
+                                class="fa-brands fa-square-snapchat"></i>Snapchat</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- </div> -->
+    </footer>
+    <!-- end footer -->
+    <!-- backtop -->
+    <a href="#" class="back-top">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+    <script src="./asset/js_dungchung.js"></script>
+    <script src="./asset/SanPham.js"></script>
+    <script src="./asset/ChiTietSanPham.js"></script>
+    <script src="data/dataChiTietSanPham.js"></script>
+    
+
+
+
+</body>
+
+</html>

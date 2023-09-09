@@ -1,0 +1,284 @@
+main{
+    margin-top: 84px;
+}
+
+footer{
+    margin-top: 40px;
+}
+
+.main__slider {
+    background: url('../img/bg_breadcrumb-gioi-thieu.png') top center / cover no-repeat ;
+    height: 160px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main__slider__content {
+    text-align: center;
+    line-height: 160px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+button a i{
+    color: #000000;
+}
+button a i:hover{
+    font-size: 2.5em;
+    color: #ff8a6c;
+}
+
+.chitiet-header{
+    padding-top: 60px;
+}
+
+.sanpham{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    height: 100%;
+    padding-bottom: 60px;
+
+}
+
+.sanpham-trai img:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.12) ;
+}
+
+.sanpham-phai{
+    max-width: 100%;
+}
+.loai-san-pham{
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+}
+
+.thuong-hieu{
+    display: flex;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+.status-name{
+    color: #91ad41;
+    margin-left: 5px;
+    right: 5px;
+}
+
+.frist-staus-2 {
+    display: flex;
+    margin-left: 10px;
+}
+
+.ten-san-pham{
+    padding-top: 13px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.gia-san-pham{
+    padding-top: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 6px;
+    color: #91ad41;
+}
+
+.thong-tin-them{
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ebebeb;
+}
+
+form{
+    padding-top: 20px;
+    display: block;
+}
+
+.box {
+    display:grid;
+  grid-template-columns: 90px 50px 40px 40px;
+}
+.so-luong {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.so-luong h1 {
+    font-size: 16px;
+}
+.tru,
+.cong {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 50%;
+    text-align: center;
+}
+.tru {
+    margin-right: 10px;
+}
+.cong {
+    margin-left: 10px;
+}
+.tru:hover,.cong:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+.so{
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    font-size: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+input{
+    writing-mode: horizontal-tb !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.chitiet-add-cart {
+    height: 40px;
+    padding: 5px 40px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    background-image: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+    transition: all 0.5s ease;
+}
+.chitiet-add-cart:hover {
+    background: #fff !important;
+    border: 1px solid #91ad41;
+    color: #91ad41;
+}
+
+.chitiet-body{
+   
+    height: 160px;
+    position: relative;
+   text-align: center;
+
+}
+
+.chitiet-body h1{
+    position: absolute;
+    top: 10%;
+    color: #91ad41;
+    left: 50%;
+    font-size: 60px;
+
+}
+.chitiet-body h3{
+    position: absolute;
+    top: 52%;
+    left: 41%;
+    color: #606060;
+    font-size: 33px;
+}
+
+.chitiet-footer{
+    margin: 40px 40px;
+    
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 110px;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 40px;
+}
+
+
+.product-option:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.12) ;
+}
+
+.product-option {
+    flex : 0 0 20%;
+    max-width: 20%;
+    text-align: center;
+    margin: 16px 2%;
+}
+
+.product--img,
+.img-sanpham {
+    width: 100%;
+}
+
+.product--name {
+    font-size: 21px;
+}
+
+.product-buy:hover {
+    color: #59cca6 ;
+}
+
+.product-buy {
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+
+
+@media  screen and (max-width:740px) {
+    .chitiet-body h3{
+        font-size: 25px;
+    }
+    .banner-body {
+        display: none;
+    }
+}
+
+@media  screen and (max-width:740px){
+    .sanpham{
+        display: block;
+        margin-top: 150px;
+    }
+}
+
+@media (max-width : 63.9375em)  {
+
+}
+
+@media (max-width : 63.9375em)  {
+
+}
+
+@media (max-width : 46.1875em) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #img_sanpham {
+        width: 100%;
+    }
+
+    .chitiet-bobdy {
+        align-items: center;
+    }
+
+}

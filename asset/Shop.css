@@ -1,0 +1,61 @@
+.main {
+    margin-top: 84px;
+}
+table{
+    margin: 20px;
+    font-size: 1.1em;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+
+  
+ 
+table img{
+    border-radius: 3px;
+    width: 70%;
+}
+table td, th{
+    padding: 20px;
+    border: 4px rgb(236, 189, 189) solid;
+}
+.canhtrai{
+    text-align: left;
+}
+.fa-trash{
+    font-size: 1.5em;
+    color: green;
+    cursor: pointer;
+}
+.cart-table button{
+    border: none;
+    background-color: white;
+}
+.fa-trash:hover{
+    color: red;
+    font-size: 2em;
+}
+.chitiet-add-cart a{
+    font-size: 1.3em;
+    height: 40px;
+    padding: 5px 40px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 20px;
+    background-image: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+    transition: all 0.5s ease;
+    text-decoration: none;
+ 
+}
+.bnt-add-cart{
+    background-color: white;
+    border: none;
+    margin-left: 80% ;
+    margin-bottom: 20px;
+}
+
+.chitiet-add-cart:hover a {
+    background: #fff !important;
+    color: #91ad41;
+}
